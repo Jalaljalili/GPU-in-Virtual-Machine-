@@ -55,6 +55,7 @@ chmod +x ./NVIDIA-Linux-....run
 ```
 For install Open-Source version:
 ```bash
+sudo bash -c "echo -e options nvidia NVreg_OpenRmEnableUnsupportedGpus=1 >> /etc/modprobe.d/nvidia-open-source.conf"
 ./NVIDIA-Linux-....run -m=kernel-open
 ```
 
